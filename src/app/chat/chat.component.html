@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Mesenger</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+<section class="body-chat">
+    <div class="seccion-titulo">
+        <h3>
+            <i class="fas fa-comments"></i>
+            Chat Mesenger
+        </h3>
+    </div>
+    <div class="seccion-usuarios">
+        <div class="seccion-buscar">
+            <div class="input-buscar">
+                <input type="search" placeholder="Buscar usuario">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="seccion-lista-usuarios">
+            <div class="usuario">
+                <div class="avatar">
+                    <img src="https://img.freepik.com/vector-premium/avatar-perfil-usuario-femenino-es-mujer-personaje-protector-pantalla-emociones_505620-617.jpg?w=2000" alt="img">
+                    <span class="estado-usuario enlinea"></span>
+                </div>
+                <div class="cuerpo">
+                    <span> Nombre apellido</span>
+                    <span>detalles de mensaje</span>
+                </div>
+                <span class="notificacion">
+                    3
+                </span>
+            </div>
+            <div class="usuario">
+                <div class="avatar">
+                    <img src="https://www.shareicon.net/data/512x512/2016/05/24/770137_man_512x512.png" alt="img">
+                    <span class="estado-usuario ocupado"></span>
+                </div>
+                <div class="cuerpo">
+                    <span> Nombre apellido</span>
+                    <span>detalles de mensaje</span>
+                </div>
+                <span class="notificacion">
+                    1
+                </span>
+            </div>
+            <div class="usuario">
+                <div class="avatar">
+                    <img src="https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png" alt="img">
+                    <span class="estado-usuario desconectado"></span>
+                </div>
+                <div class="cuerpo">
+                    <span> Nombre apellido</span>
+                    <span>detalles de mensaje</span>
+                </div>
+                <span class="notificacion">
+                    1
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="seccion-chat">
+        <div class="usuario-seleccionado">
+            <div class="avatar">
+                <img src="https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png" alt="img">
+            </div>
+            <div class="cuerpo">
+                <span>Nombre de usuario</span>
+                <span>Activo - Escribiendo...</span>
+            </div>
+            <div class="opciones">
+                <ul>
+                    <li>
+                        <button type="button"><i class="fas fa-video"></i></button>
+                    </li>
+                    <li>
+                        <button type="button"><i class="fas fa-phone-alt"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel-chat">
+            <div class="mensaje">
+                <div class="avatar">
+                    <img src="https://www.shareicon.net/data/512x512/2016/05/24/770137_man_512x512.png" alt="img">
+                </div>
+                <div class="cuerpo">
+                    <!-- <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> -->
+                    <div class="texto">
+                        @usuario, esto son , datos quemados sin funcionalidad.
+                        <span class="tiempo">
+                            <i class="far fa-clock"></i>
+                            Hace 5 min
+                        </span>
+                    </div>
+                    <ul class="opciones-msj">
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-share-square"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- derecha -->
+            <div class="mensaje left">
+                <div class="cuerpo">
+                    <!-- <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> -->
+                    <div class="texto">
+                        @usuario, esto son , datos quemados sin funcionalidad. <br>
+                        se trata de la parte visual
+                        <span class="tiempo">
+                            <i class="far fa-clock"></i>
+                            Hace 6 min
+                        </span>
+                    </div>
+                    <ul class="opciones-msj">
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-share-square"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="avatar">
+                    <img src="https://img.freepik.com/vector-premium/avatar-perfil-usuario-femenino-es-mujer-personaje-protector-pantalla-emociones_505620-617.jpg?w=2000" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="panel-escritura">
+            <form class="textarea">
+                <div class="opcines">
+                    <button type="button">
+                        <i class="fas fa-file"></i>
+                        <label for="file"></label>
+                        <input type="file" id="file">
+                    </button>
+                    <button type="button">
+                        <i class="far fa-image"></i>
+                        <label for="img"></label>
+                        <input type="file" id="img">
+                    </button>
+                </div>
+                <textarea placeholder="Escribir mensaje"></textarea>
+                <button type="button" class="enviar">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
+    <p style="font-size: .75rem;">Chat Mesenger</p>
+    <div>
+        <a target="_blank" href=""><i class="fab fa-facebook-square"></i></a>
+        <a target="_blank" href=""><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href=""><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+
+</body>
+
+</html>
